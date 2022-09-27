@@ -5,49 +5,21 @@
     <title>PDF Tools by SMY</title>
 </head>
 <body>
-    <h1 style="text-align:center;">
-        PDF Toolbox by SMY
-    </h1>
+<h1 style="text-align:center;">
+    PDF Split by SMY
+</h1>
 
-    <p style="font-size:20px;text-align:center;">
-        <a href="split.html"> PDF分割 </a>
-<!--        <a href="split.html">split</a>-->
+<p style="font-size:20px;">
+<div class="inputarea">
+    <input type="file" accept=".pdf" name="pdfinput" id="pdfinput" />
+    <input type="text" id="rangeselector" placeholder="eg. 1-3" />
+    <button id="extractBtn">Extract</button>
+</div>
 
+<script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+<script type="module" src="index.js"></script>
 
-<!--        -->
-<!--        <label for="file_format">请选择转换的图片格式:</label>-->
-
-<!--        <select name="file_format" id="file_format" style="font-size:20px;">-->
-<!--            <option value="image/jpg">JPG</option>-->
-<!--            <option value="image/jpeg">JPEG</option>-->
-<!--            <option value="image/png">PNG</option>-->
-<!--        </select>-->
-
-<!--        <br>-->
-<!--        <br>-->
-
-
-<!--        <label for="rate">请输入图像压缩比例:</label>-->
-<!--        <input type="number" name="rate" id="rate" min="0" max="1" placeholder="1.0" step="0.01" style="font-size:20px;" value="1">-->
-
-<!--        <br>-->
-<!--        <br>-->
-
-<!--        <label for="files">请选择转换图片</label>-->
-<!--        <input type="file" name="files" id="files" style="font-size:20px;" multiple="multiple">-->
-
-<!--        <br>-->
-<!--        <br>-->
-
-<!--        <button type="button" style="font-size:20px;" id="hello">确定</button>-->
-<!--        <script type="module">-->
-<!--            import {convert} from './convert.js';-->
-<!--            document.querySelector('#hello').addEventListener('click', convert);-->
-<!--        </script>-->
-    </p>
-
-
-
+</p>
 </body>
-
 </html>
